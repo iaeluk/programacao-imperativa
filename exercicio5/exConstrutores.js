@@ -8,12 +8,11 @@ function Restaurante(nome, cardapio){
          this.nome = nome;
          this.cardapio = cardapio;
          this.entrada = function(){
-             let ultimoElemento = this.cardapio.pop()
-                let estabelecimento = ''
-                if(this.nome.toUpperCase() === `RICUS`){
-                    estabelecimento = `restaurante`
-                } else { estabelecimento = `boteco`}
-                
+                let ultimoElemento = this.cardapio.pop()
+                let estabelecimento = 'restaurante'
+                if(this.nome.toUpperCase() !== `RICUS`){
+                    estabelecimento = `boteco`
+                }
                 return `Bem-vindo ao ${estabelecimento} ${this.nome}! O cardápio de hoje é ${this.cardapio.join(", ")} e ${ultimoElemento}.`
          }  
 }
