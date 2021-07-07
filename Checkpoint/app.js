@@ -47,4 +47,4 @@ function microondas(tempo, comida) {
         return 'prato inexistente'
     }
 }
-console.log(microondas(25, 'feijão'))
+console.log(microondas(8, 'macarrao'))
