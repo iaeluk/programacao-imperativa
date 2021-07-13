@@ -49,4 +49,3 @@ function ordenarPorNota(array) {
 }
 
 console.log(ordenarPorNota(alunos));
-
